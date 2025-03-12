@@ -174,11 +174,13 @@ var intervalId = setInterval(function() {
   if (psvCanvasContainer) {
     psvCanvasContainer.style.setProperty("filter", `blur(${globalBlurValue}px)`);
     if (grayscale.checked)
-      psvCanvasContainer.style.setProperty("filter", `grayscale(100%) blur(${globalBlurValue}px)`)
+      psvCanvasContainer.style.setProperty("filter", `grayscale(100%) blur(${globalBlurValue}px)`);
     if (flipped.checked)
-      psvCanvasContainer.style.setProperty("-webkit-transform", "rotateX(180deg)")
+      psvCanvasContainer.style.setProperty("-webkit-transform", "rotateX(180deg)");
     if (mirrored.checked)
-      psvCanvasContainer.style.setProperty("transform", "rotateY(180)")
+      psvCanvasContainer.style.setProperty("transform", "scaleX(-1)");
+    if (mirrored.checked && flipped.checked)
+      psvCanvasContainer.style.setProperty("transform", `scaleX(-1) rotateX(180deg)`);
   }
 
   const countdownDiv = document.querySelector('.styles_timer-value__ze4qX');
