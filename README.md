@@ -9,7 +9,7 @@ It is, in a way, similar to changing the HTML/CSS with "inspect element". It rea
 It does not send any data anywhere on the internet (for now at least, I'm thinking about making something interesting for multiplayer).
 
 ## Why is it shit?
-Because I did not know what I was doing. This is my first browser extension and I am inexperienced. If anyone knows and wishes to make it better but doesn't want to start from scratch,
+Because I had no idea what I was doing. This is my first browser extension and I am inexperienced. If anyone knows and wishes to make it better but doesn't want to start from scratch,
 be my guest and do what you wish with the code.
 
 ## How do I download/load it?
