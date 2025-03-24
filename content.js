@@ -275,8 +275,8 @@ var intervalId = setInterval(function() {
     
 // If round time is not unlimited
 //###################################################################################################################
-  if (largeMap) {
-    if (countdownDiv && countdownDiv.textContent !== null && !beforeCountdownDiv && globalTimeoutValue > 0 && largeMap.checked) {
+  if (dt_checkbox) {
+    if (countdownDiv && countdownDiv.textContent !== null && !beforeCountdownDiv && globalTimeoutValue > 0 && dt_checkbox.checked) {
 
       minSec = countdownDiv.textContent.split(':');
       minutes = parseInt(minSec[0]);
@@ -304,8 +304,8 @@ var intervalId = setInterval(function() {
 
 // If singleplayer with unlimited round time
 //###################################################################################################################
-  if (largeMap) {
-    if (!countdownDiv && firstChange == 0 && !nextGameMap_sp && !nextGameMap_mp && !beforeCountdownDiv && declaredTimeout == 0 && globalTimeoutValue > 0 && largeMap.checked) {
+  if (dt_checkbox) {
+    if (!countdownDiv && firstChange == 0 && !nextGameMap_sp && !nextGameMap_mp && !beforeCountdownDiv && declaredTimeout == 0 && globalTimeoutValue > 0 && dt_checkbox.checked) {
     
       displayTimer = setTimeout(function() { // Cooldown before div is hidden
 	  		  changeOpacity();
